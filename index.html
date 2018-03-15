@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="markupApp">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content=""/>
+
+<!-- Document Title -->
+<title>Markup Group 3</title>
+
+<!-- StyleSheets -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/sine-wave.css">
+<link rel='stylesheet' media='screen and (max-device-width: 480px)' href='css/small.css' />
+
+<link rel="stylesheet" href="css/material-icons.css">
+<link rel="stylesheet" type="text/css" href="css/nunito.css" />
+<link href='css/sourcesanspro.css' rel='stylesheet'>
+<link href='css/font-awesome.css' rel='stylesheet'>
+<link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+<link href='css/poppins.css' rel='stylesheet'>
+<link href="css/simplebar.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/select.css" />
+<link rel="stylesheet" href="css/toggle.css">
+<link rel="stylesheet" href="css/loader.css">
+<link rel="stylesheet" href="css/loading.css">
+<link rel="stylesheet" href="css/loadingdots.css">
+<link rel="stylesheet" href="css/ham.css">
+<link rel="stylesheet" href="css/chat.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/checkbox.css">
+
+<link href="images/icon.png" rel="shortcut icon" type="image/png">
+
+<!-- Slick carousel -->
+<link rel="stylesheet" href="css/slick/slick.css">
+<link rel="stylesheet" href="css/slick/slick-theme.css">
+
+<!-- <base href="/"> -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+<body>
+	<!-- {{localParticipantAdded}} -->
+	<div id="page-loading">
+		<div class="center_item_vertically">
+			<div style="width: 100%; height: 40px; text-align: center; margin-top: 20px;">
+				<div class="loading_dots page-loading">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+			</div>
+		</div>
+	</div>
+	<div ui-view class="fullsize overallContainer" ng-class="{'noScroll':flyoutOpen}">
+		
+	</div>
+
+	<!-- AngularJS Library -->
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-sanitize.js"></script>
+
+	<!-- AngularJS UI Router -->
+	<script src="js/angular-ui-router.min.js"></script>
+
+	<!-- NGCookies -->
+    <script src="js/angular-cookies.js"></script>
+
+	<!-- Socket.io libraries -->
+    <script src="js/socket.io.js"></script>
+
+	<script type="text/javascript" src="js/app.js"></script>
+    <script src="js/services/basic.auth.interceptor.service.js"></script>
+    <script src="js/services/socket.js"></script>
+    <script src="js/services/services.js"></script>
+    <script src="js/services/base64.js"></script>
+    <script src="js/services/auth.js"></script>
+    <script src="js/services/chat.js"></script>
+    <script src="js/directives/directives.js"></script>
+	<script src="js/controllers/bodyctrl.js"></script>
+	<script src="js/controllers/homectrl.js"></script>
+	<script src="js/controllers/blogctrl.js"></script>
+	<script src="js/controllers/loginctrl.js"></script>
+	<script src="js/controllers/resetctrl.js"></script>
+	<script src="js/controllers/signupctrl.js"></script>
+	<script src="js/controllers/verifyctrl.js"></script>
+	<script src="js/controllers/controllerctrl.js"></script>
+	<script src="js/controllers/dashboardCtrl.js"></script>
+	<script src="js/controllers/landingCtrl.js"></script>
+	<script src="js/controllers/doctorListCtrl.js"></script>
+	<script src="js/controllers/iconsCtrl.js"></script>
+	<script src="js/controllers/doctorctrl.js"></script>
+	<script src="js/controllers/profilectrl.js"></script>
+	<script src="js/controllers/askaquestionctrl.js"></script>
+	<script src="js/controllers/chatctrl.js"></script>
+	<script src="js/controllers/callctrl.js"></script>
+	<script src="js/controllers/viewquestionctrl.js"></script>
+	<script src="js/controllers/viewchatctrl.js"></script>
+	<script src="js/controllers/mydoctorsctrl.js"></script>
+	<script src="js/controllers/alldoctorsctrl.js"></script>
+	<script src="js/controllers/changectrl.js"></script>
+	<script src="js/controllers/appointmentctrl.js"></script>
+	<script src="js/controllers/appointmentsctrl.js"></script>
+	<script src="js/controllers/appointmentdetailsctrl.js"></script>
+	<script src="js/filters/filters.js"></script>
+	<script type="text/javascript" src="js/twilio-video.min.js"></script>
+	<script src="js/angular-animate.min.js"></script>
+	<script src="js/angular-aria.min.js"></script>
+	<script src="js/angular-messages.min.js"></script>
+	<script type="text/javascript" src="js/simplebar.js"></script>
+	<script type="text/javascript" src="js/twilio-video.min.js"></script>
+
+	<!-- Angular Material Library -->
+	<script src="js/angular-material.min.js"></script>
+
+	<!-- Slick carousel -->
+	<script src="js/ui-bootstrap-tpls-2.5.0.js"></script>
+
+	<script type="text/javascript">
+	    document.addEventListener("DOMContentLoaded", function(event) {
+	        var element = document.getElementById("page-loading");
+	        element.parentNode.removeChild(element);
+	    });
+	</script>
+
+</body>
+</html>

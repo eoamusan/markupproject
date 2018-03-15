@@ -1,0 +1,205 @@
+.module {
+  width: 100%;
+  padding-top: 15px;
+  height: calc(100% - 60px);
+}
+
+.top-bar {
+  background: #666;
+  color: white;
+  padding: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.top-bar h1 {
+  display: inline;
+  font-size: 1.1rem;
+}
+.top-bar .typicons-message {
+  display: inline-block;
+  padding: 4px 5px 2px 5px;
+}
+.top-bar .typicons-minus {
+  position: relative;
+  top: 3px;
+}
+.top-bar .left {
+  float: left;
+}
+.top-bar .right {
+  float: right;
+  padding-top: 5px;
+}
+.top-bar > * {
+  position: relative;
+}
+.top-bar::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  opacity: 0.25;
+  background: radial-gradient(#ffffff, #000000);
+  animation: pulse 1s ease alternate infinite;
+}
+
+.discussion {
+  list-style: none;
+  margin: 0;
+  padding: 0 15px 30px 15px;
+}
+.discussion li {
+  padding: 0.3rem;
+  overflow: hidden;
+  display: flex;
+  text-align: left;
+}
+.discussion .avatar {
+  width: 40px;
+  position: relative;
+}
+.discussion .avatar img {
+  display: block;
+  width: 100%;
+}
+
+.avatar div{
+  width: 40px; 
+  height: 40px; 
+  border-radius: 40px; 
+  background: #000; 
+  background-size: cover; 
+  background-position: center; 
+  overflow: hidden;
+}
+
+.self > .avatar div{
+  display: none;
+}
+
+.other .avatar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -11px;
+  width: 0;
+  height: 0;
+  border: 5px solid #E9E9E9;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.other .messages{
+  background: #E9E9E9;
+  border-radius: 15px;
+  max-width: 75%;
+  position: relative;
+  margin-left: 8px;
+}
+
+.self .messages{
+  background: #DA251C;
+  border-radius: 15px 0 15px 15px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.self .messages:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-style: solid;
+  display: block;
+  width: 0;
+  top: 0px;
+  right: -9px;
+  bottom: auto;
+  border-width: 0px 0px 10px 12px;
+  border-color: transparent #da251c;
+  /* transform: rotate(-45deg); */
+}
+
+.other .messages.first_answer {
+  border-top-left-radius: 0;
+}
+
+.other .messages.first_answer:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-style: solid;
+  display: block;
+  width: 0;
+  top: 0px;
+  left: -12px;
+  bottom: auto;
+  border-width: 0px 12px 10px 0px;
+  border-color: transparent #e9e9e9;
+}
+
+
+
+
+
+.self .messages p{
+  color: #FFF;
+}
+
+.self .messages time{
+  color: #EEE;
+}
+
+.self {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.self .messages {
+  order: 1;
+}
+
+.messages {
+  background: white;
+  padding: 10px;
+  max-width: 80%;
+}
+.messages p {
+  font-size: 0.88rem;
+  margin: 0 0 0.2rem 0;
+}
+.messages time {
+  font-size: 0.7rem;
+  color: #ccc;
+}
+
+.other .avatar{
+  margin-right: 10px;
+}
+
+.self .avatar{
+  margin-left: 10px;
+}
+
+.imagePreviews{
+  width: 80px;
+  height: 100%;
+  background: #EEE;
+  display: inline-block;
+  border-radius: 10px;
+  margin-left: 10px;
+  background-position: center;
+  background-size: cover;
+}
+.imagePreview{
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #DDD;
+  position: absolute;
+  bottom: -100px;
+  background: #FFF;
+  transition: all 0.2s;
+}
+.imagePreview.expanded{
+  bottom: 50px;
+}
