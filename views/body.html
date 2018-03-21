@@ -1,19 +1,44 @@
 <div class="markup">
 	<div class="markup_links center_item_vertically">
-		<div class="markup_link mapicon">
-			
+		<div class="markup_link mapicon" ng-click="maps();">
+			<div class="label">
+				Maps
+			</div>
+			<div class="icon">
+				<i class="fa fa-map center_item"></i>
+			</div>
 		</div>
-		<div class="markup_link piechart">
-			
+		<div class="markup_link piechart" ng-click="piechart();">
+			<div class="label">
+				Pie Chart
+			</div>
+			<div class="icon">
+				<i class="fa fa-pie-chart center_item"></i>
+			</div>
 		</div>
-		<div class="markup_link linechart">
-			
+		<div class="markup_link linechart" ng-click="linechart();">
+			<div class="label">
+				Line Chart
+			</div>
+			<div class="icon">
+				<i class="fa fa-line-chart center_item"></i>
+			</div>
 		</div>
-		<div class="markup_link barchart">
-			
+		<div class="markup_link barchart" ng-click="barchart();">
+			<div class="label">
+				Bar Chart
+			</div>
+			<div class="icon">
+				<i class="fa fa-bar-chart center_item"></i>
+			</div>
 		</div>
-		<div class="markup_link teammembers">
-			
+		<div class="markup_link teammembers" ng-click="ourteam();">
+			<div class="label">
+				Our Team
+			</div>
+			<div class="icon">
+				<i class="fa fa-group center_item"></i>
+			</div>
 		</div>
 	</div>
 	<div class="home-head">
@@ -22,6 +47,9 @@
 		</div>
 		<div class="markup_header_text">
 			<span class="center_item_vertically" style="font-size: 2.2rem;">Markup - Group 3</span>
+		</div>
+		<div class="markup_header_label">
+			<span class="center_item_vertically" style="font-size: 2.2rem; color: #666;" ui-view="page-label">Line Chart</span>
 		</div>
 	</div>
 	<div class="markup_landing" ui-view="main-view">

@@ -114,7 +114,7 @@ a{
 	height: 100%;
 }
 .head_info{
-	width: 80%;
+	width: 75%;
 	height: 40px;
 	margin: auto;
 	padding-top: 30px;
@@ -442,7 +442,7 @@ a{
 	min-height: 400px;
 }
 .ourblogs .blog_container{
-	width: 80%;
+	width: 75%;
 	height: 400px;
 	margin: auto;
 	padding-left: 20px;
@@ -803,7 +803,7 @@ a{
 	padding-top: 40px;
 }
 .dashboardSide .tabs .tab{
-	width: 80%;
+	width: 75%;
 	height: 50px;
 	margin: auto;
 	transition: all 0.5s;
@@ -2237,6 +2237,39 @@ a{
 	width: 60px;
 	height: 60px;
 	cursor: pointer;
+	position: relative;
+	/*transition: all 0.2s;*/
+}
+.markup_link .label{
+	width: 85px;
+    height: 40px;
+    float: left;
+    padding-left: 15px;
+    padding-top: 20px;
+    color: #FFF;
+    margin-left: -100px;
+    /*transition: all 0.2s;*/
+}
+.markup_link .icon {
+    width: 60px;
+    height: 60px;
+    float: left;
+    position: relative;
+    background: rgba(0,0,0,0);
+    transition: all 0.2s;
+}
+.markup_link:hover{
+	width: 160px;
+}
+.markup_link:hover .icon{
+    background: rgba(0,0,0,0.2);
+}
+.markup_link:hover .label{
+    margin-left: 0;
+}
+.markup_link i{
+	color: #FFF;
+	font-size: 1.4rem;
 }
 .home-container{
 	width: 100%;
@@ -2244,7 +2277,7 @@ a{
 	margin: auto;
 }
 .markup_landing{
-	width: 80%;
+	width: 75%;
 	height: calc(100% - 100px);
 	margin: auto;
 }
@@ -2259,21 +2292,21 @@ a{
 	margin:20px 0px;
 }
 #map_links {
-	width: 440px;
+	width: calc(100% - 566px);
 	float:left;
 	height:200px;
 	font-family:"Segoe UI";
 	padding-top: 30px;
 }
 #link_right {
-	width: 195px;
+	width: calc(50% - 21px);
 	padding: 0 0 0 20px;
 	float:left;
 	line-height: 8px;
 	border-left:#CCCCCC dashed thin;
 }
 #link_left {
-	width: 195px;
+	width: calc(50% - 20px);
 	padding: 0px 20px 0px 0px;
 	float:left;
 	text-align: right;
@@ -2305,7 +2338,7 @@ a{
 	color:#003300;
 }
 .home-head{
-	width: 80%;
+	width: 75%;
 	height: 80px;
 	margin: auto;
 	margin-bottom: 20px;
@@ -2318,9 +2351,24 @@ a{
 	position: relative;
 }
 .markup_header_text{
-	width: calc(100% - 80px);
+	width: calc(100% - 380px);
 	height: 100%;
 	float: left;
+}
+.markup_header_label{
+	width: 300px;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.markup_header_label span{
+	text-align: right;
+	width: 100%;
+}
+.bar, .pie, .line{
+	width: 100%;
+	height: 500px;
+	position: relative;
 }
 .mapicon{
 	background: rgba(227, 118, 149, 1);

@@ -12,16 +12,79 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider, $http
             controller: 'bodyCtrl'
         })
 
-        .state('home', {
+        .state('maps', {
             url: '/',
             parent: 'body',
             views: {
                 'main-view@body': {
                     templateUrl : "views/home.html",
                     controller: 'homeCtrl'
+                },
+                'page-label@body': {
+                    template : "Map",
+                    controller: 'homeCtrl'
                 }
             }
-            
+        })
+
+        .state('piechart', {
+            url: '/piechart',
+            parent: 'body',
+            views: {
+                'main-view@body': {
+                    templateUrl : "views/pie.html",
+                    controller: 'pieCtrl'
+                },
+                'page-label@body': {
+                    template : "Pie Chart",
+                    controller: 'homeCtrl'
+                }
+            }
+        })
+
+        .state('linechart', {
+            url: '/linechart',
+            parent: 'body',
+            views: {
+                'main-view@body': {
+                    templateUrl : "views/line.html",
+                    controller: 'lineCtrl'
+                },
+                'page-label@body': {
+                    template : "Line Chart",
+                    controller: 'homeCtrl'
+                }
+            }
+        })
+
+        .state('barchart', {
+            url: '/barchart',
+            parent: 'body',
+            views: {
+                'main-view@body': {
+                    templateUrl : "views/bar.html",
+                    controller: 'barCtrl'
+                },
+                'page-label@body': {
+                    template : "Bar Chart",
+                    controller: 'homeCtrl'
+                }
+            }
+        })
+
+        .state('ourteam', {
+            url: '/ourteam',
+            parent: 'body',
+            views: {
+                'main-view@body': {
+                    templateUrl : "views/ourteam.html",
+                    controller: 'teamCtrl'
+                },
+                'page-label@body': {
+                    template : "Our Team",
+                    controller: 'homeCtrl'
+                }
+            }
         })
 
 });
