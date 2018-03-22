@@ -2409,15 +2409,15 @@ a{
 .team-member:hover div{
 	background-size: auto 105%;
 }
-.team-member.tobi div{
+.team-member.tobi div:first-of-type{
 	background-image: url(../images/team/tobi2.png);
 }
-.team-member.zino div{
+.team-member.zino div:first-of-type{
 	background-image: url(../images/team/zino.jpg);
 }
-.team-member.khadijah div{
-	background-image: url(../images/team/khadijah.jpeg);
+.team-member.khadijah div:first-of-type{
+	background-image: url(../images/team/khadijah.jpg);
 }
-.team-member.ronke div{
+.team-member.ronke div:first-of-type{
 	background-image: url(../images/team/ronke.jpeg);
 }
