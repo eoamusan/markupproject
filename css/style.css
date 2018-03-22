@@ -2385,3 +2385,39 @@ a{
 .teammembers{
 	background: rgba(236, 71, 71, 1);
 }
+.team-member{
+	width: calc((100% - 108px) / 4);
+	height: 300px;
+	float: left;
+	margin-right: 20px;
+	background: #FFF;
+	border-radius: 8px;
+	margin-top: 40px;
+	padding: 5px;
+	border: 1px solid #DDD;
+	cursor: pointer;
+}
+.team-member:last-of-type{
+	margin-right: 0;
+}
+.team-member div{
+	border-radius: 8px;
+	background-size: auto 115%;
+	background-position: center;
+	transition: all 0.3s;
+}
+.team-member:hover div{
+	background-size: auto 105%;
+}
+.team-member.tobi div{
+	background-image: url(../images/team/tobi2.png);
+}
+.team-member.zino div{
+	background-image: url(../images/team/zino.jpg);
+}
+.team-member.khadijah div{
+	background-image: url(../images/team/khadijah.jpeg);
+}
+.team-member.ronke div{
+	background-image: url(../images/team/ronke.jpeg);
+}

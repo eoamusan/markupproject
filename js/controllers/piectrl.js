@@ -29,14 +29,7 @@ app.controller('pieCtrl', function($rootScope, $scope, $http, $state, socket, $i
 	        }]
 	    },
 	    options: {
-	    	maintainAspectRatio: false,
-	        scales: {
-	            yAxes: [{
-	                ticks: {
-	                    beginAtZero:true
-	                }
-	            }]
-	        }
+	    	maintainAspectRatio: false
 	    }
 	});
 });
